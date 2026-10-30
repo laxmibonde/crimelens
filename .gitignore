@@ -1,0 +1,11 @@
+# # CrimeLens large datasets
+data/raw/
+data/processed/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Temporary project files
+scratch/

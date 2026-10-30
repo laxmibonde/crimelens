@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Command Center KPIs",
+    "endpoint": "/api/dashboard/summary?dataset=real",
+    "method": "GET",
+    "filters": {
+      "dataset": "real"
+    },
+    "input_desc": "761,718 real incidents (all-time)",
+    "run1_cold_ms": 2930.4,
+    "run2_warm_ms": 2872.8,
+    "run3_warm_ms": 2852.3,
+    "mean_ms": 2885.2,
+    "size_bytes": 375,
+    "status": "PASS"
+  },
+  {
+    "name": "OLAP Rollups",
+    "endpoint": "/api/olap/rollup",
+    "method": "POST",
+    "filters": {
+      "year": 2024,
+      "dimension": "month"
+    },
+    "input_desc": "2024 incidents (259,670 rows) rolled up by month",
+    "run1_cold_ms": 325.7,
+    "run2_warm_ms": 247.8,
+    "run3_warm_ms": 255.1,
+    "mean_ms": 276.2,
+    "size_bytes": 3127,
+    "status": "PASS"
+  },
+  {
+    "name": "Monthly Trend Analysis",
+    "endpoint": "/api/trends/timeseries",
+    "method": "POST",
+    "filters": {
+      "granularity": "monthly"
+    },
+    "input_desc": "761,718 incidents across 36 months",
+    "run1_cold_ms": 278.3,
+    "run2_warm_ms": 244.8,
+    "run3_warm_ms": 275.8,
+    "mean_ms": 266.3,
+    "size_bytes": 2986,
+    "status": "PASS"
+  },
+  {
+    "name": "District Comparisons",
+    "endpoint": "/api/area-intelligence/districts-summary",
+    "method": "POST",
+    "filters": {
+      "dataset": "real"
+    },
+    "input_desc": "All 22 CPD districts aggregated",
+    "run1_cold_ms": 595.6,
+    "run2_warm_ms": 575.2,
+    "run3_warm_ms": 635.5,
+    "mean_ms": 602.1,
+    "size_bytes": 17945,
+    "status": "PASS"
+  },
+  {
+    "name": "Automated Insights",
+    "endpoint": "/api/insights/summary",
+    "method": "POST",
+    "filters": {
+      "min_score": 0,
+      "max_insights": 10
+    },
+    "input_desc": "Statistical distribution & anomalies on 761,718 incidents",
+    "run1_cold_ms": 1518.8,
+    "run2_warm_ms": 1576.4,
+    "run3_warm_ms": 1743.1,
+    "mean_ms": 1612.7,
+    "size_bytes": 5961,
+    "status": "PASS"
+  },
+  {
+    "name": "Data Quality Summaries",
+    "endpoint": "/api/data-quality/overview?dataset=real",
+    "method": "GET",
+    "filters": {
+      "dataset": "real"
+    },
+    "input_desc": "14-rule data warehouse integrity validation",
+    "run1_cold_ms": 2851.1,
+    "run2_warm_ms": 3011.9,
+    "run3_warm_ms": 2713.2,
+    "mean_ms": 2858.7,
+    "size_bytes": 872,
+    "status": "PASS"
+  },
+  {
+    "name": "Bounded DBSCAN",
+    "endpoint": "/api/hotspots/clusters",
+    "method": "POST",
+    "filters": {
+      "district": "001",
+      "year": 2024,
+      "eps": 300,
+      "min_pts": 15
+    },
+    "input_desc": "District 001, 2024 (bounded subset ~14k pts)",
+    "run1_cold_ms": 36.6,
+    "run2_warm_ms": 33.8,
+    "run3_warm_ms": 53.0,
+    "mean_ms": 41.1,
+    "size_bytes": 3368,
+    "status": "PASS"
+  },
+  {
+    "name": "Bounded Hotspot Evolution",
+    "endpoint": "/api/hotspots/timeline/compare",
+    "method": "POST",
+    "filters": {
+      "district": "001",
+      "pA": "2023-01",
+      "pB": "2024-01"
+    },
+    "input_desc": "District 001 (Jan 2023 vs Jan 2024)",
+    "run1_cold_ms": 111.2,
+    "run2_warm_ms": 19032.8,
+    "run3_warm_ms": 107.6,
+    "mean_ms": 6417.2,
+    "size_bytes": 323660,
+    "status": "PASS"
+  },
+  {
+    "name": "K-Means Area Clustering",
+    "endpoint": "/api/kmeans/analyze",
+    "method": "POST",
+    "filters": {
+      "k": 4,
+      "granularity": "district"
+    },
+    "input_desc": "22 CPD Districts feature matrix",
+    "run1_cold_ms": 18.4,
+    "run2_warm_ms": 30.6,
+    "run3_warm_ms": 45.6,
+    "mean_ms": 31.5,
+    "size_bytes": 17028,
+    "status": "PASS"
+  },
+  {
+    "name": "Apriori Association Rules",
+    "endpoint": "/api/apriori/analyze",
+    "method": "POST",
+    "filters": {
+      "min_support": 0.05,
+      "min_confidence": 0.3
+    },
+    "input_desc": "Transactions sample / representative rule mining",
+    "run1_cold_ms": 49.7,
+    "run2_warm_ms": 33.0,
+    "run3_warm_ms": 29.0,
+    "mean_ms": 37.2,
+    "size_bytes": 80846,
+    "status": "PASS"
+  },
+  {
+    "name": "Decision Tree Metadata",
+    "endpoint": "/api/decision-tree/metadata?dataset=real",
+    "method": "GET",
+    "filters": {
+      "dataset": "real"
+    },
+    "input_desc": "Decision tree model architecture & features",
+    "run1_cold_ms": 138.2,
+    "run2_warm_ms": 191.9,
+    "run3_warm_ms": 183.1,
+    "mean_ms": 171.1,
+    "size_bytes": 2265,
+    "status": "PASS"
+  },
+  {
+    "name": "Report Generation Preview",
+    "endpoint": "/api/reports/preview",
+    "method": "POST",
+    "filters": {
+      "report_type": "executive_summary"
+    },
+    "input_desc": "Multi-table executive aggregation",
+    "run1_cold_ms": 646.3,
+    "run2_warm_ms": 636.3,
+    "run3_warm_ms": 667.4,
+    "mean_ms": 650.0,
+    "size_bytes": 968,
+    "status": "PASS"
+  }
+]

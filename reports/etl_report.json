@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-10-08T13:01:45.069187",
+  "duration_seconds": 66.51430583000183,
+  "status": "COMPLETED_SUCCESSFULLY",
+  "database_status": "SUCCESS",
+  "extraction": {
+    "source_file": "C:\\Users\\suvar\\Downloads\\CrimeLens\\data\\raw\\chicago_crimes_raw.csv",
+    "extracted_count": 50000,
+    "duplicate_source_ids_count": 19,
+    "missing_coordinates_count": 4734,
+    "missing_summary": {
+      "id": 0,
+      "case_number": 0,
+      "date": 0,
+      "block": 0,
+      "iucr": 0,
+      "primary_type": 0,
+      "description": 0,
+      "location_description": 486,
+      "arrest": 0,
+      "domestic": 0,
+      "beat": 0,
+      "district": 0,
+      "ward": 0,
+      "community_area": 2,
+      "fbi_code": 0,
+      "year": 0,
+      "updated_on": 0,
+      "x_coordinate": 4734,
+      "y_coordinate": 4734,
+      "latitude": 4734,
+      "longitude": 4734,
+      "location": 4734
+    }
+  },
+  "transformation": {
+    "initial_record_count": 50000,
+    "unique_record_count": 49981,
+    "duplicate_ids_removed": 19,
+    "duplicate_id_sample": [
+      "12954451",
+      "12954452",
+      "12954453",
+      "13334312",
+      "13336435"
+    ],
+    "missing_coordinates_count": 4734,
+    "missing_coordinates_percentage": 9.47,
+    "invalid_dates_count": 0
+  },
+  "loading": {
+    "loaded_fact_count": 49981,
+    "dimension_counts": {
+      "dim_time": 7218,
+      "dim_area": 904,
+      "dim_location": 31154,
+      "dim_crime": 279,
+      "dim_premise": 103,
+      "dim_status": 4
+    },
+    "staged_fact_count": 49981
+  },
+  "idempotency": {
+    "run2_new_fact_records": 0
+  }
+}

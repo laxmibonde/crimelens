@@ -1,0 +1,146 @@
+// ============================================================================
+// CrimeLens — Production DAX Measure Library for Power BI Desktop
+// Star Schema Target: PostgreSQL 18 crimelens_db (fact_crime + 6 dimensions)
+// ============================================================================
+
+// --- 1. Total Recorded Incidents ---
+Total Recorded Incidents = 
+COUNTROWS(fact_crime)
+
+// --- 2. Arrested Incidents ---
+Arrested Incidents = 
+CALCULATE(
+    [Total Recorded Incidents],
+    dim_status[arrest] = TRUE()
+)
+
+// --- 3. Arrest Percentage ---
+Arrest Percentage = 
+DIVIDE(
+    [Arrested Incidents],
+    [Total Recorded Incidents],
+    0
+)
+
+// --- 4. Domestic Incidents ---
+Domestic Incidents = 
+CALCULATE(
+    [Total Recorded Incidents],
+    dim_status[domestic] = TRUE()
+)
+
+// --- 5. Domestic Percentage ---
+Domestic Percentage = 
+DIVIDE(
+    [Domestic Incidents],
+    [Total Recorded Incidents],
+    0
+)
+
+// --- 6. Unique Crime Categories ---
+Unique Crime Categories = 
+DISTINCTCOUNT(dim_crime[primary_type])
+
+// --- 7. Active Districts ---
+Active Districts = 
+DISTINCTCOUNT(dim_area[district])
+
+// --- 8. Nighttime Incidents ---
+Nighttime Incidents = 
+CALCULATE(
+    [Total Recorded Incidents],
+    dim_time[time_period] = "Night"
+)
+
+// --- 9. Nighttime Percentage ---
+Nighttime Percentage = 
+DIVIDE(
+    [Nighttime Incidents],
+    [Total Recorded Incidents],
+    0
+)
+
+// --- 10. Weekend Incidents ---
+Weekend Incidents = 
+CALCULATE(
+    [Total Recorded Incidents],
+    dim_time[is_weekend] = TRUE()
+)
+
+// --- 11. Weekend Percentage ---
+Weekend Percentage = 
+DIVIDE(
+    [Weekend Incidents],
+    [Total Recorded Incidents],
+    0
+)
+
+// --- 12. Incidents With Valid Coordinates ---
+Incidents With Valid Coordinates = 
+CALCULATE(
+    [Total Recorded Incidents],
+    NOT(ISBLANK(dim_location[latitude])),
+    NOT(ISBLANK(dim_location[longitude])),
+    dim_location[latitude] <> 0,
+    dim_location[longitude] <> 0
+)
+
+// --- 13. Spatial Eligibility Percentage ---
+Spatial Eligibility Percentage = 
+DIVIDE(
+    [Incidents With Valid Coordinates],
+    [Total Recorded Incidents],
+    0
+)
+
+// --- 14. Selected Period Incidents ---
+Selected Period Incidents = 
+[Total Recorded Incidents]
+
+// --- 15. Previous Period Incidents ---
+Previous Period Incidents = 
+CALCULATE(
+    [Total Recorded Incidents],
+    DATEADD(dim_time[full_date], -1, MONTH)
+)
+
+// --- 16. Absolute Period Difference ---
+Absolute Period Difference = 
+[Selected Period Incidents] - [Previous Period Incidents]
+
+// --- 17. Relative Period Difference ---
+Relative Period Difference = 
+DIVIDE(
+    [Absolute Period Difference],
+    [Previous Period Incidents],
+    0
+)
+
+// --- 18. Category Share ---
+Category Share = 
+DIVIDE(
+    [Total Recorded Incidents],
+    CALCULATE(
+        [Total Recorded Incidents],
+        ALL(dim_crime[primary_type])
+    ),
+    0
+)
+
+// --- 19. District Share ---
+District Share = 
+DIVIDE(
+    [Total Recorded Incidents],
+    CALCULATE(
+        [Total Recorded Incidents],
+        ALL(dim_area[district])
+    ),
+    0
+)
+
+// --- 20. Selected Date Range Incident Count ---
+Selected Date Range Incident Count = 
+CALCULATE(
+    [Total Recorded Incidents],
+    ALLSELECTED(dim_time)
+)

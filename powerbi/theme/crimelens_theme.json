@@ -1,0 +1,53 @@
+{
+  "name": "CrimeLens Dark Intelligence Theme",
+  "dataColors": [
+    "#38BDF8",
+    "#4ADE80",
+    "#C084FC",
+    "#FDE047",
+    "#F472B6",
+    "#FB923C",
+    "#A7F3D0",
+    "#818CF8"
+  ],
+  "background": "#0F172A",
+  "foreground": "#F8FAFC",
+  "tableAccent": "#1E293B",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "color": { "solid": { "color": "#1E293B" } },
+            "transparency": 10
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#334155" } },
+            "radius": 8
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "fontColor": { "solid": { "color": "#F8FAFC" } },
+            "fontSize": 12,
+            "fontFamily": "Segoe UI",
+            "bold": true
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": { "solid": { "color": "#0F172A" } }
+          }
+        ]
+      }
+    }
+  }
+}

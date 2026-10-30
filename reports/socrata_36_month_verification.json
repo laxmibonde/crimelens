@@ -1,0 +1,334 @@
+{
+  "audit_target": "Official City of Chicago Socrata API ijzp-q8t2.json vs CrimeLens CSVs",
+  "verification_timestamp": "2026-10-28T16:38:54.386439Z",
+  "total_months": 36,
+  "total_api_sum": 761718,
+  "total_csv_sum": 761718,
+  "all_match": true,
+  "monthly_reconciliation": [
+    {
+      "year_month": "2023-01",
+      "query_timestamp": "2026-10-28T16:37:34.835470Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-01-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272023-02-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 21405,
+      "raw_csv_count": 21405,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2023-02",
+      "query_timestamp": "2026-10-28T16:37:36.743186Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-02-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272023-03-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 18527,
+      "raw_csv_count": 18527,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2023-03",
+      "query_timestamp": "2026-10-28T16:37:38.501504Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-03-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272023-04-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 20846,
+      "raw_csv_count": 20846,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2023-04",
+      "query_timestamp": "2026-10-28T16:37:40.373360Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-04-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272023-05-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 20851,
+      "raw_csv_count": 20851,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2023-05",
+      "query_timestamp": "2026-10-28T16:37:42.083727Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-05-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272023-06-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 22323,
+      "raw_csv_count": 22323,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2023-06",
+      "query_timestamp": "2026-10-28T16:37:44.003364Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-06-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272023-07-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 22817,
+      "raw_csv_count": 22817,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2023-07",
+      "query_timestamp": "2026-10-28T16:37:46.508508Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-07-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272023-08-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 24114,
+      "raw_csv_count": 24114,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2023-08",
+      "query_timestamp": "2026-10-28T16:37:48.421910Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-08-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272023-09-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 24283,
+      "raw_csv_count": 24283,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2023-09",
+      "query_timestamp": "2026-10-28T16:37:50.118358Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-09-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272023-10-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 22700,
+      "raw_csv_count": 22700,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2023-10",
+      "query_timestamp": "2026-10-28T16:37:51.919337Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-10-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272023-11-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 23152,
+      "raw_csv_count": 23152,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2023-11",
+      "query_timestamp": "2026-10-28T16:37:53.677166Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-11-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272023-12-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 21475,
+      "raw_csv_count": 21475,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2023-12",
+      "query_timestamp": "2026-10-28T16:37:55.662089Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272023-12-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-01-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 21375,
+      "raw_csv_count": 21375,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-01",
+      "query_timestamp": "2026-10-28T16:37:58.471587Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-01-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-02-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 19722,
+      "raw_csv_count": 19722,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-02",
+      "query_timestamp": "2026-10-28T16:38:00.207239Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-02-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-03-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 19991,
+      "raw_csv_count": 19991,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-03",
+      "query_timestamp": "2026-10-28T16:38:02.028092Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-03-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-04-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 20956,
+      "raw_csv_count": 20956,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-04",
+      "query_timestamp": "2026-10-28T16:38:04.387834Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-04-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-05-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 20537,
+      "raw_csv_count": 20537,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-05",
+      "query_timestamp": "2026-10-28T16:38:06.223864Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-05-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-06-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 23033,
+      "raw_csv_count": 23033,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-06",
+      "query_timestamp": "2026-10-28T16:38:07.958737Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-06-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-07-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 23250,
+      "raw_csv_count": 23250,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-07",
+      "query_timestamp": "2026-10-28T16:38:09.539862Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-07-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-08-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 24151,
+      "raw_csv_count": 24151,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-08",
+      "query_timestamp": "2026-10-28T16:38:11.913464Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-08-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-09-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 23047,
+      "raw_csv_count": 23047,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-09",
+      "query_timestamp": "2026-10-28T16:38:14.159799Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-09-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-10-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 23033,
+      "raw_csv_count": 23033,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-10",
+      "query_timestamp": "2026-10-28T16:38:16.734378Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-10-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-11-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 22524,
+      "raw_csv_count": 22524,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-11",
+      "query_timestamp": "2026-10-28T16:38:18.469754Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-11-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272024-12-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 19772,
+      "raw_csv_count": 19772,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2024-12",
+      "query_timestamp": "2026-10-28T16:38:20.484787Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272024-12-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-01-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 19654,
+      "raw_csv_count": 19654,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-01",
+      "query_timestamp": "2026-10-28T16:38:22.390170Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-01-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-02-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 18577,
+      "raw_csv_count": 18577,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-02",
+      "query_timestamp": "2026-10-28T16:38:24.191374Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-02-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-03-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 16587,
+      "raw_csv_count": 16587,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-03",
+      "query_timestamp": "2026-10-28T16:38:26.112112Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-03-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-04-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 19834,
+      "raw_csv_count": 19834,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-04",
+      "query_timestamp": "2026-10-28T16:38:32.764044Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-04-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-05-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 19728,
+      "raw_csv_count": 19728,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-05",
+      "query_timestamp": "2026-10-28T16:38:34.599249Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-05-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-06-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 20575,
+      "raw_csv_count": 20575,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-06",
+      "query_timestamp": "2026-10-28T16:38:36.291847Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-06-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-07-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 21196,
+      "raw_csv_count": 21196,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-07",
+      "query_timestamp": "2026-10-28T16:38:38.429332Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-07-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-08-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 22717,
+      "raw_csv_count": 22717,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-08",
+      "query_timestamp": "2026-10-28T16:38:40.698739Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-08-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-09-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 21385,
+      "raw_csv_count": 21385,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-09",
+      "query_timestamp": "2026-10-28T16:38:42.521590Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-09-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-10-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 20412,
+      "raw_csv_count": 20412,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-10",
+      "query_timestamp": "2026-10-28T16:38:47.870882Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-10-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-11-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 21066,
+      "raw_csv_count": 21066,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-11",
+      "query_timestamp": "2026-10-28T16:38:49.925483Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-11-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272025-12-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 18501,
+      "raw_csv_count": 18501,
+      "delta": 0,
+      "exact_match": true
+    },
+    {
+      "year_month": "2025-12",
+      "query_timestamp": "2026-10-28T16:38:52.190975Z",
+      "query_url": "https://data.cityofchicago.org/resource/ijzp-q8t2.json?$select=count(*)&$where=date%20%3E%3D%20%272025-12-01T00%3A00%3A00.000%27%20and%20date%20%3C%20%272026-01-01T00%3A00%3A00.000%27",
+      "socrata_api_count": 17602,
+      "raw_csv_count": 17602,
+      "delta": 0,
+      "exact_match": true
+    }
+  ]
+}
